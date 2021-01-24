@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+
+    <!-- For Responsive Website -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Job Search Website</title>
+
+    <!-- CSS links -->
+
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav id="navigation-bar">
+        
+        <div class="nav-bar-div">
+            <span class="company-details">
+                <a href="#">
+                    <i class="fab fa-pied-piper"></i>
+                    Job
+                </a>
+            </span>
+            <ul class="quick-links">
+                <a href="#"><li class="quick-link-item">Find Jobs</li></a>
+                <a href="#"><li class="quick-link-item">Company Reviews</li></a>
+                <a href="#"><li class="quick-link-item">Find Salaries</li></a>
+            </ul>
+        </div>
+
+        <div class="nav-bar-div">
+            <ul class="quick-links">
+                <a href="#">
+                    <li class="quick-link-item icon-item">
+                        <i class="far fa-comments"></i>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="quick-link-item icon-item">
+                        <i class="far fa-bell"></i>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="quick-link-item icon-item">
+                        <i class="far fa-user"></i>
+                    </li>
+                </a>
+            </ul>
+            <span class="post-block"><a href="#">Employers / Post a Job</a></span>
+        </div>
+
+        <div class="topnav">
+
+            <!-- Logo to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+        </div>
+
+    </nav>
+
+    <div id="myLinks">
+        <a href="#"><i class="far fa-comments"></i>&emsp;Messages</a>
+        <a href="#"><i class="far fa-bell"></i>&emsp;Notifications</a>
+        <a href="#"><i class="far fa-user"></i>&emsp;Profile</a>
+        <a href="#">Employer / Post a Job</a>
+    </div>
+
+    <!-- Search Bar -->
+    <section id="search-bar">
+        <h2 id="search-bar-heading">Search for your next job</h2> 
+
+        <form action="" method="POST" id="search-bar-form">
+
+            
+
+            <div class="input-icons"> 
+
+                <i class="fas fa-search"></i>
+
+                <input class="input-field" 
+                       type="text"
+                       name="search" 
+                       placeholder="Search by title, skill, or company"> 
+
+            </div> 
+  
+            <div class="input-icons"> 
+
+                <i class="fas fa-map-marker-alt"></i>
+
+                <input class="input-field" 
+                       type="text"
+                       name="location"
+                       placeholder="City, state, or zipcode"> 
+
+            </div> 
+
+            <input type="submit" value="Search">
+
+
+
+        </form>
+
+    </section>
+
+    <!-- Jobs -->
+    <section id="job-results">
+
+       <div class="job-card">
+        <!-- <div class="apply-button">Apply</div> -->
+            <div class="card-top">
+
+                <div class="company-logo"></div>
+
+                <div class="company-desc">
+                    <div class="company-name">CARBON BAE</div>
+                    <div class="job-heading">Frontend Web Developer</div>
+                    <div class="job-location">Bangalore, IN</div>
+                </div>                
+
+            </div>
+
+            <div class="card-bottom">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et culpa repudiandae accusamus pariatur maxime voluptatem aperiam cumque similique illum exercitationem, nam commodi dolorum voluptate sed tempora architecto asperiores debitis illo!
+            </div>
+
+       </div>
+
+       <div class="job-card">
+        <!-- <div class="apply-button">Apply</div> -->
+        <div class="card-top">
+
+            <div class="company-logo"></div>
+
+            <div class="company-desc">
+                <div class="company-name">CARBON BAE</div>
+                <div class="job-heading">Frontend Web Developer</div>
+                <div class="job-location">Bangalore, IN</div>
+            </div>                
+
+        </div>
+
+        <div class="card-bottom">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et culpa repudiandae accusamus pariatur maxime voluptatem aperiam cumque similique illum exercitationem, nam commodi dolorum voluptate sed tempora architecto asperiores debitis illo!
+        </div>
+
+   </div>
+
+   <div class="job-card">
+    <!-- <div class="apply-button">Apply</div> -->
+    <div class="card-top">
+
+
+        <div class="company-logo"></div>
+
+        <div class="company-desc">
+            <div class="company-name">CARBON BAE</div>
+            <div class="job-heading">Frontend Web Developer</div>
+            <div class="job-location">Bangalore, IN</div>
+        </div>                
+
+    </div>
+
+    <div class="card-bottom">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et culpa repudiandae accusamus pariatur maxime voluptatem aperiam cumque similique illum exercitationem, nam commodi dolorum voluptate sed tempora architecto asperiores debitis illo!
+    </div>
+
+</div>
+
+   <div class="job-card">
+    <!-- <div class="apply-button">Apply</div> -->
+    <div class="card-top">
+
+        <div class="company-logo"></div>
+
+        <div class="company-desc">
+            <div class="company-name">CARBON BAE</div>
+            <div class="job-heading">Frontend Web Developer</div>
+            <div class="job-location">Bangalore, IN</div>
+        </div>                
+
+    </div>
+
+    <div class="card-bottom">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et culpa repudiandae accusamus pariatur maxime voluptatem aperiam cumque similique illum exercitationem, nam commodi dolorum voluptate sed tempora architecto asperiores debitis illo!
+    </div>
+
+</div>
+
+<div class="job-card">
+    <!-- <div class="apply-button">Apply</div> -->
+    <div class="card-top">
+
+        <div class="company-logo"></div>
+
+        <div class="company-desc">
+            <div class="company-name">CARBON BAE</div>
+            <div class="job-heading">Frontend Web Developer</div>
+            <div class="job-location">Bangalore, IN</div>
+        </div>                
+
+    </div>
+
+    <div class="card-bottom">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et culpa repudiandae accusamus pariatur maxime voluptatem aperiam cumque similique illum exercitationem, nam commodi dolorum voluptate sed tempora architecto asperiores debitis illo!
+    </div>
+
+</div>
+
+<div class="job-card">
+    <!-- <div class="apply-button">Apply</div> -->
+    <div class="card-top">
+
+        <div class="company-logo"></div>
+
+        <div class="company-desc">
+            <div class="company-name">CARBON BAE</div>
+            <div class="job-heading">Frontend Web Developer</div>
+            <div class="job-location">Bangalore, IN</div>
+        </div>                
+
+    </div>
+
+    <div class="card-bottom">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et culpa repudiandae accusamus pariatur maxime voluptatem aperiam cumque similique illum exercitationem, nam commodi dolorum voluptate sed tempora architecto asperiores debitis illo!
+    </div>
+
+</div>
+        
+
+    </section>
+    <!-- Footer -->
+    <section id="footer">
+
+        <h1 class="section-heading" style="color:white">
+            <span><i class="far fa-id-card"></i></span>
+            <span>CONTACT US</span>
+        </h1>
+
+        <div id="contact-container">
+            <div id="send-mail">
+
+                <form action="" method="post">
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea placeholder="Message" rows="3"></textarea>
+                    <input id="submit-button" type="submit" name="send" value="Send Message">
+                    <!-- <button type = "submit" id = "submit-buttom"> Send Message</button> -->
+                </form>
+
+            </div>
+
+            <div id="company-info">
+
+                <h2 class='hide-in-mobile'>Get in Touch</h3>
+                    <p class='hide-in-mobile'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut.</p>
+                    <h2>Contact us at</h3>
+                        <p><span><i class="fas fa-map-marker-alt"></i></span><span>&nbsp New Delhi, India</span></p>
+                        <p><span><i class="fas fa-mobile"></i></span><span>&nbsp (+91) 9090909090</span></p>
+                        <p><span><i class="far fa-envelope"></i></span><span>&nbsp example.example@gmail.com</span>
+                        </p>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Custom Script Tag -->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

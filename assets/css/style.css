@@ -1,0 +1,410 @@
+body{
+    margin:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+/* NAVIGATION BAR */
+
+#navigation-bar{
+    position:sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
+    background-color: white;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:0.0625rem solid #faf9f8;
+}
+
+.topnav{
+    display: none;
+}
+
+.company-details{
+    font-size: 3rem;
+    padding: 0.1rem;
+    padding-right: 0 !important;
+}
+
+.company-details *{
+    color:rgb(39, 94, 17) !important;
+}
+
+.quick-links{
+    list-style: none;
+    display:inline-block;
+}
+
+.quick-link-item{
+    display: inline-block;
+    padding:0.2rem;
+    font-size:1.1rem;
+}
+
+.quick-links > a:hover{
+    color:rgb(104, 148, 87);
+
+}
+
+.icon-item{
+    font-size:larger;
+    margin-left:0.5rem;
+    margin-right:0.5rem;
+}
+
+#navigation-bar span{
+    margin-left:0.7rem;
+    margin-right: 0.7rem;
+}
+
+.post-block{
+    display: inline-block;
+    width:12vw;
+    text-align: center;
+    border-left: 0.0625rem solid #706d6a93;
+}
+
+#myLinks{
+    display:none;
+}
+
+/* SEARCH BAR */
+
+#search-bar-heading{ 
+    color: rgb(104, 148, 87);
+    font-weight: 300; 
+    font-size:3rem;
+    text-align: center;
+} 
+
+#search-bar-form{
+    width:75vw;
+    margin: auto;
+}
+
+.input-icons{
+    width:40%;
+    height:2rem;
+    display: inline-block;
+    margin:0rem;
+    /* padding-left: 2; */
+}
+
+.input-icons i {
+    margin-left:0.4rem;
+    position:absolute;
+    font-size:1.5rem;
+    top:13rem;
+    color:rgb(104, 148, 87);
+    /* font-weight:200; */
+}
+
+.input-field{
+    width:90%;
+    height:100%;
+    padding:0.2rem;
+    padding-left:2rem;
+    font-size:1rem;
+    border:0.0625rem solid rgb(104, 148, 87);
+}
+
+.input-field:focus{
+    outline:none;
+    /* background-color: rgb(104, 148, 87) */
+}
+
+input[type="submit"]{
+    height:2.5rem;
+    width:6rem;
+    border-style: none;
+    color:white;
+    background-color:  rgb(104, 148, 87);
+    font-size: 1rem;
+    cursor:pointer;
+}
+
+input[type="submit"]:hover{
+    border:2px solid rgb(39, 94, 17);
+}
+  
+/* JOBS SECTION */
+
+
+#job-results{
+    margin-top:5% !important;
+    width:90vw;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    /* row-gap: 1rem; */
+    /* column-gap:1rem; */
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* JOB CARD */
+.job-card{
+    width:47%;
+    height:auto;
+    padding:15px;
+    /* border:2px solid black; */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);;;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.job-card:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    cursor:pointer;
+    /* opacity: 0.2; */
+}
+
+.card-top{
+    height:60%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.company-logo{
+    width:80px;
+    height:80px;
+    background-image: url('../images/google.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.company-name{
+    font-size:1rem;
+    color:rgb(71, 104, 58);
+}
+
+.job-heading{
+    font-size:1.3rem;
+    color:rgb(104, 148, 87);
+}
+
+.job-location{
+    font-size: 0.9rem;
+    color:rgb(127, 165, 113);
+}
+
+.card-bottom{
+    margin-top:0.5rem;
+    font-size:0.9rem;
+    text-align: justify;
+    /* padding:0.7rem; */
+    margin-bottom:0.5rem;
+}
+
+
+/* FOOTER */
+
+#footer{
+    /* background-image:linear-gradient(to right,rgb(71, 104, 58),rgb(104, 148, 87)); */
+    background-image: linear-gradient(to right top, #689457, #729e60, #7ba86a, #85b273, #8fbc7d, #99c487, #a4cd92, #aed59c, #badeaa, #c7e6b8, #d3efc7, #e0f8d5);
+    color:white;
+    margin-top:5rem;
+}
+
+.section-heading{
+    text-align: center;
+    padding:3rem;
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+h2{
+    font-weight: 400;
+}
+
+#contact-container{
+	display:flex;
+	flex-wrap:wrap;
+	/*justify-content:space-around;*/
+}
+
+#send-mail{
+	width:50%;
+}
+
+#send-mail *{
+	border:none;
+}
+
+#send-mail > form > *{
+	display:block;
+	background-color: transparent;
+	margin:auto;
+	margin-top:40px;
+	width:75%;
+	border-bottom:2px solid white;
+	font-size:1.1rem;
+	outline: none;
+	color:white;
+}
+
+
+#submit-button{
+	border:2px white solid;
+	font-size:1.4rem;
+	padding:10px 0px;
+	border-radius:2px;
+	color:white;
+	text-transform: uppercase;
+	font-weight:200;
+    max-width:200px;
+    cursor:pointer;
+}
+
+#submit-button:hover{
+	background-color:white;
+	color:rgb(104, 148, 87);
+}
+
+#company-info{
+	width:40%;
+	padding:20px;
+	font-size:1rem;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* Bigger than Tablet but smaller than PC */
+@media screen and (max-width:1450px){
+
+    #search-bar-form{
+        width:95vw;
+        margin-left:10vw;
+        /* margin:10px; */
+    }
+
+    #job-results{
+        width: 95vw;
+    }
+}
+
+@media screen and (max-width:1350px){
+    .job-card{
+        width:45%;
+    }
+
+    .card-bottom{
+        padding-bottom:10px;
+    }
+}
+
+
+
+/* TABLETS AND SMALLER */
+@media screen and (max-width:800px){
+
+    /* NAVIGATION BAR */
+
+
+    .post-block{
+        display:none;
+    }
+
+    .quick-links{
+        display:none;
+    }
+
+    .topnav{
+        display: block;
+    }
+
+    #myLinks{
+        display: none;
+        width:100vw;
+    }
+
+    #myLinks a{
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;  
+        text-align:justify; 
+    }
+
+    .topnav a{
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        /* text-align: center; */
+    }
+      
+    .topnav a.icon {
+        /* background: black; */
+        font-size:1.2rem;
+        display: block;
+    }
+      
+    .topnav a:hover {
+        color: rgb(104, 148, 87);
+        /* text-decoration: underline; */
+    }
+
+    #myLinks a:hover {
+        color: rgb(104, 148, 87);
+        /* text-decoration: underline; */
+    }
+
+
+    /* SEARCH BAR */
+    #search-bar-heading{
+        font-size:2rem;
+    }
+
+    #search-bar-form{
+        width:90vw;
+        margin:10px;
+    }
+
+    .input-icons i{
+        display:none;
+    }
+
+    .input-icons{
+        margin:20px;
+        padding:0;
+        display:block;
+        width:100%;
+    }
+
+    input[type="submit"]{
+        display:block;
+        margin:auto;
+        width:35%;
+    }
+
+    /* JOBS SECTION */ 
+
+    .job-card{
+        width:100%;
+    }
+
+    /* FOOTER */
+    #send-mail{
+		width:100%
+	}
+
+	#company-info{
+        width:100%;
+        text-align: center;
+    }
+    
+    .hide-in-mobile{
+        display:none;
+    }
+
+}
+
