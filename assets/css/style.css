@@ -391,7 +391,12 @@ h2{
     .job-card{
         width:100%;
         padding:10px;
-        overflow:hidden;
+        /* overflow:hidden; */
+    }
+
+    .card-bottom{
+        /* overflow:auto; */
+        font-size:0.8rem;
     }
 
     /* FOOTER */
